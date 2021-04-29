@@ -7,7 +7,11 @@
 import UIKit
 
 public struct CircleButtonItem {
-    let title: String
+    public let title: String
+    
+    public init(title: String) {
+        self.title = title
+    }
 }
 
 public class CircleButtonGroupView: UIView {

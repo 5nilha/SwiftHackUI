@@ -23,6 +23,18 @@
 		3E1CFDA8263A77C90021BCFF /* CircleButtonGroupViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFDA7263A77C90021BCFF /* CircleButtonGroupViewTest.swift */; };
 		3E1CFDB8263A7BBC0021BCFF /* CircleButtonGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFDB7263A7BBC0021BCFF /* CircleButtonGroupViewController.swift */; };
 		3E1CFDC3263A7BFE0021BCFF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFDC2263A7BFE0021BCFF /* HomeViewController.swift */; };
+		3E1CFE40263B0E2E0021BCFF /* DoublePodExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFE3F263B0E2E0021BCFF /* DoublePodExtension.swift */; };
+		3E1CFE45263B0E500021BCFF /* StringPodExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFE44263B0E500021BCFF /* StringPodExtension.swift */; };
+		3E1CFE4A263B0E6F0021BCFF /* DecimalPodExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFE49263B0E6F0021BCFF /* DecimalPodExtension.swift */; };
+		3E1CFE4F263B0E8E0021BCFF /* LabelPodExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFE4E263B0E8E0021BCFF /* LabelPodExtension.swift */; };
+		3E1CFE54263B0EB80021BCFF /* UIFontPodExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFE53263B0EB80021BCFF /* UIFontPodExtension.swift */; };
+		3E1CFE59263B0EF30021BCFF /* DatePodExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFE58263B0EF30021BCFF /* DatePodExtension.swift */; };
+		3E1CFE5E263B0F210021BCFF /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFE5D263B0F210021BCFF /* Localization.swift */; };
+		3E1CFE63263B0F940021BCFF /* UITextFieldPodExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFE62263B0F940021BCFF /* UITextFieldPodExtension.swift */; };
+		3E1CFE68263B105E0021BCFF /* UITextViewPodExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFE67263B105E0021BCFF /* UITextViewPodExtension.swift */; };
+		3E1CFE6D263B10A20021BCFF /* ScrollViewPodExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFE6C263B10A20021BCFF /* ScrollViewPodExtension.swift */; };
+		3E1CFE72263B10CF0021BCFF /* UITableViewCellPodExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFE71263B10CF0021BCFF /* UITableViewCellPodExtension.swift */; };
+		3E1CFE78263B12850021BCFF /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFE77263B12850021BCFF /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +69,18 @@
 		3E1CFDA7263A77C90021BCFF /* CircleButtonGroupViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonGroupViewTest.swift; sourceTree = "<group>"; };
 		3E1CFDB7263A7BBC0021BCFF /* CircleButtonGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonGroupViewController.swift; sourceTree = "<group>"; };
 		3E1CFDC2263A7BFE0021BCFF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3E1CFE3F263B0E2E0021BCFF /* DoublePodExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublePodExtension.swift; sourceTree = "<group>"; };
+		3E1CFE44263B0E500021BCFF /* StringPodExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringPodExtension.swift; sourceTree = "<group>"; };
+		3E1CFE49263B0E6F0021BCFF /* DecimalPodExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalPodExtension.swift; sourceTree = "<group>"; };
+		3E1CFE4E263B0E8E0021BCFF /* LabelPodExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelPodExtension.swift; sourceTree = "<group>"; };
+		3E1CFE53263B0EB80021BCFF /* UIFontPodExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontPodExtension.swift; sourceTree = "<group>"; };
+		3E1CFE58263B0EF30021BCFF /* DatePodExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePodExtension.swift; sourceTree = "<group>"; };
+		3E1CFE5D263B0F210021BCFF /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		3E1CFE62263B0F940021BCFF /* UITextFieldPodExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldPodExtension.swift; sourceTree = "<group>"; };
+		3E1CFE67263B105E0021BCFF /* UITextViewPodExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewPodExtension.swift; sourceTree = "<group>"; };
+		3E1CFE6C263B10A20021BCFF /* ScrollViewPodExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewPodExtension.swift; sourceTree = "<group>"; };
+		3E1CFE71263B10CF0021BCFF /* UITableViewCellPodExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellPodExtension.swift; sourceTree = "<group>"; };
+		3E1CFE77263B12850021BCFF /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				3E1CFD82263A766E0021BCFF /* Colors.swift */,
+				3E1CFE5D263B0F210021BCFF /* Localization.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -155,6 +180,16 @@
 			children = (
 				3E1CFD8B263A76C70021BCFF /* UIColorPodExtension.swift */,
 				3E1CFD93263A76FB0021BCFF /* UIViewPodExtension.swift */,
+				3E1CFE3F263B0E2E0021BCFF /* DoublePodExtension.swift */,
+				3E1CFE44263B0E500021BCFF /* StringPodExtension.swift */,
+				3E1CFE49263B0E6F0021BCFF /* DecimalPodExtension.swift */,
+				3E1CFE4E263B0E8E0021BCFF /* LabelPodExtension.swift */,
+				3E1CFE53263B0EB80021BCFF /* UIFontPodExtension.swift */,
+				3E1CFE58263B0EF30021BCFF /* DatePodExtension.swift */,
+				3E1CFE62263B0F940021BCFF /* UITextFieldPodExtension.swift */,
+				3E1CFE67263B105E0021BCFF /* UITextViewPodExtension.swift */,
+				3E1CFE6C263B10A20021BCFF /* ScrollViewPodExtension.swift */,
+				3E1CFE71263B10CF0021BCFF /* UITableViewCellPodExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -171,6 +206,7 @@
 		3E1CFD99263A77300021BCFF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				3E1CFE76263B12540021BCFF /* CalendarView */,
 				3E1CFD98263A771E0021BCFF /* CircleButton */,
 			);
 			path = Components;
@@ -206,6 +242,14 @@
 				3E1CFDB7263A7BBC0021BCFF /* CircleButtonGroupViewController.swift */,
 			);
 			path = CircleButton;
+			sourceTree = "<group>";
+		};
+		3E1CFE76263B12540021BCFF /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				3E1CFE77263B12850021BCFF /* CalendarView.swift */,
+			);
+			path = CalendarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,9 +394,21 @@
 			files = (
 				3E1CFD94263A76FB0021BCFF /* UIViewPodExtension.swift in Sources */,
 				3E1CFD78263A75E70021BCFF /* CircleButtonGroupView.swift in Sources */,
+				3E1CFE5E263B0F210021BCFF /* Localization.swift in Sources */,
+				3E1CFE78263B12850021BCFF /* CalendarView.swift in Sources */,
+				3E1CFE54263B0EB80021BCFF /* UIFontPodExtension.swift in Sources */,
+				3E1CFE40263B0E2E0021BCFF /* DoublePodExtension.swift in Sources */,
+				3E1CFE4A263B0E6F0021BCFF /* DecimalPodExtension.swift in Sources */,
+				3E1CFE63263B0F940021BCFF /* UITextFieldPodExtension.swift in Sources */,
+				3E1CFE72263B10CF0021BCFF /* UITableViewCellPodExtension.swift in Sources */,
 				3E1CFD8C263A76C70021BCFF /* UIColorPodExtension.swift in Sources */,
+				3E1CFE59263B0EF30021BCFF /* DatePodExtension.swift in Sources */,
+				3E1CFE68263B105E0021BCFF /* UITextViewPodExtension.swift in Sources */,
 				3E1CFD83263A766E0021BCFF /* Colors.swift in Sources */,
+				3E1CFE4F263B0E8E0021BCFF /* LabelPodExtension.swift in Sources */,
+				3E1CFE45263B0E500021BCFF /* StringPodExtension.swift in Sources */,
 				3E1CFD7D263A763F0021BCFF /* CircleButton.swift in Sources */,
+				3E1CFE6D263B10A20021BCFF /* ScrollViewPodExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
