@@ -11,11 +11,11 @@ protocol CircleButtonDelegate: class {
     func buttonClicked(title: String?)
 }
 
-class CircleButton: UIButton {
+public final class CircleButton: UIButton {
     
-    weak var delegate: CircleButtonDelegate?
+    public weak var delegate: CircleButtonDelegate?
     
-    convenience init() {
+    public convenience init() {
         self.init(frame: .zero)
     }
     
@@ -47,7 +47,7 @@ class CircleButton: UIButton {
         self.circle()
     }
     
-    func setBorder(width: CGFloat = 2, Color: UIColor = Colors.primary) {
+    public func setBorder(width: CGFloat = 2, Color: UIColor = Colors.primary) {
         self.borderWidth = 2
         self.borderColor = Colors.primary
     }
@@ -66,7 +66,7 @@ class CircleButton: UIButton {
         }
     }
     
-    var text: String? {
+    public var text: String? {
         get {
             return self.title(for: .normal)
         } set {
@@ -74,7 +74,7 @@ class CircleButton: UIButton {
         }
     }
     
-    var image: UIImage? {
+    public var image: UIImage? {
         get {
             return self.image(for: .normal)
         } set {
@@ -82,11 +82,11 @@ class CircleButton: UIButton {
         }
     }
     
-    func filled() {
+    public func filled() {
         backgroundColor = Colors.primary
     }
     
-    func outlined() {
+    public func outlined() {
         backgroundColor = .white
     }
     

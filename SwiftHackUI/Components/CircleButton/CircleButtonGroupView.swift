@@ -9,18 +9,18 @@ import Foundation
 
 import UIKit
 
-struct CircleButtonItem {
+public struct CircleButtonItem {
     let title: String
 }
 
-class CircleButtonGroupView: UIView {
+public final class CircleButtonGroupView: UIView {
     
     private lazy var stackView = UIStackView()
     private lazy var container = UIView()
     private lazy var imageIcon = UIImageView()
     private lazy var hStack = UIStackView()
     
-    weak var delegate: CircleButtonDelegate? {
+    public weak var delegate: CircleButtonDelegate? {
         didSet {
             if let delegate = delegate,
                let btnViews = circleButtons {
@@ -31,16 +31,16 @@ class CircleButtonGroupView: UIView {
         }
     }
     
-    convenience init() {
+    public convenience init() {
         self.init(frame: .zero)
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         commontInit()
     }
     
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         super.init(coder: coder)
         commontInit()
     }
@@ -57,7 +57,7 @@ class CircleButtonGroupView: UIView {
         mockButtons()
     }
     
-    var circleButtons: [CircleButton]? {
+    public var circleButtons: [CircleButton]? {
         return stackView.arrangedSubviews as? [CircleButton]
     }
     
@@ -101,7 +101,7 @@ class CircleButtonGroupView: UIView {
         vStack.addArrangedSubview(stackView)
     }
     
-    var items: [CircleButtonItem]? {
+    public var items: [CircleButtonItem]? {
         didSet {
             guard let items = self.items else { return }
             setupButtons(items: items)
@@ -129,7 +129,7 @@ class CircleButtonGroupView: UIView {
         hStack.addArrangedSubview(imageIcon)
     }
     
-    func addIcon(image: UIImage?) {
+    public func addIcon(image: UIImage?) {
         guard let image = image else { return }
         self.imageIcon.image = image
     }
