@@ -7,11 +7,11 @@
 
 import UIKit
 
-protocol CircleButtonDelegate: class {
+public protocol CircleButtonDelegate: class {
     func buttonClicked(title: String?)
 }
 
-public final class CircleButton: UIButton {
+public class CircleButton: UIButton {
     
     public weak var delegate: CircleButtonDelegate?
     
@@ -24,18 +24,18 @@ public final class CircleButton: UIButton {
         commonInit()
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         commonInit()
     }
     
     private func commonInit() {
         self.setTitleColor(Colors.primary, for: .normal)
-        setBorder()
+        setBorder(color: Colors.primary)
         self.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         roundView()
     }
@@ -47,12 +47,12 @@ public final class CircleButton: UIButton {
         self.circle()
     }
     
-    public func setBorder(width: CGFloat = 2, Color: UIColor = Colors.primary) {
+    public func setBorder(width: CGFloat = 2, color: UIColor) {
         self.borderWidth = 2
-        self.borderColor = Colors.primary
+        self.borderColor = color
     }
     
-    override var backgroundColor: UIColor? {
+    public override var backgroundColor: UIColor? {
         get {
             return super.backgroundColor
         }

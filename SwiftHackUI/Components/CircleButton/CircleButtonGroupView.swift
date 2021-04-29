@@ -4,16 +4,13 @@
 //
 //  Created by Fabio Quintanilha on 4/29/21.
 //
-
-import Foundation
-
 import UIKit
 
 public struct CircleButtonItem {
     let title: String
 }
 
-public final class CircleButtonGroupView: UIView {
+public class CircleButtonGroupView: UIView {
     
     private lazy var stackView = UIStackView()
     private lazy var container = UIView()
@@ -31,16 +28,16 @@ public final class CircleButtonGroupView: UIView {
         }
     }
     
-    public convenience init() {
+    convenience public init() {
         self.init(frame: .zero)
     }
     
-    public override init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         commontInit()
     }
     
-    public required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         commontInit()
     }
