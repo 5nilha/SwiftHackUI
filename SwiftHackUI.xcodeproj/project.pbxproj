@@ -10,6 +10,12 @@
 		3E1CFD4A263A714E0021BCFF /* SwiftHackUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E1CFD40263A714E0021BCFF /* SwiftHackUI.framework */; };
 		3E1CFD4F263A714E0021BCFF /* SwiftHackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFD4E263A714E0021BCFF /* SwiftHackUITests.swift */; };
 		3E1CFD51263A714E0021BCFF /* SwiftHackUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E1CFD43263A714E0021BCFF /* SwiftHackUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E1CFD63263A727E0021BCFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFD62263A727E0021BCFF /* AppDelegate.swift */; };
+		3E1CFD65263A727E0021BCFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFD64263A727E0021BCFF /* SceneDelegate.swift */; };
+		3E1CFD67263A727E0021BCFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFD66263A727E0021BCFF /* ViewController.swift */; };
+		3E1CFD6A263A727E0021BCFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E1CFD68263A727E0021BCFF /* Main.storyboard */; };
+		3E1CFD6C263A72810021BCFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E1CFD6B263A72810021BCFF /* Assets.xcassets */; };
+		3E1CFD6F263A72810021BCFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E1CFD6D263A72810021BCFF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,14 @@
 		3E1CFD49263A714E0021BCFF /* SwiftHackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftHackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E1CFD4E263A714E0021BCFF /* SwiftHackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftHackUITests.swift; sourceTree = "<group>"; };
 		3E1CFD50263A714E0021BCFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E1CFD60263A727E0021BCFF /* SwiftHackUIExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftHackUIExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E1CFD62263A727E0021BCFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E1CFD64263A727E0021BCFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3E1CFD66263A727E0021BCFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3E1CFD69263A727E0021BCFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E1CFD6B263A72810021BCFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E1CFD6E263A72810021BCFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E1CFD70263A72810021BCFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3E1CFD5D263A727E0021BCFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +76,7 @@
 			children = (
 				3E1CFD42263A714E0021BCFF /* SwiftHackUI */,
 				3E1CFD4D263A714E0021BCFF /* SwiftHackUITests */,
+				3E1CFD61263A727E0021BCFF /* SwiftHackUIExamples */,
 				3E1CFD41263A714E0021BCFF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +86,7 @@
 			children = (
 				3E1CFD40263A714E0021BCFF /* SwiftHackUI.framework */,
 				3E1CFD49263A714E0021BCFF /* SwiftHackUITests.xctest */,
+				3E1CFD60263A727E0021BCFF /* SwiftHackUIExamples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +107,20 @@
 				3E1CFD50263A714E0021BCFF /* Info.plist */,
 			);
 			path = SwiftHackUITests;
+			sourceTree = "<group>";
+		};
+		3E1CFD61263A727E0021BCFF /* SwiftHackUIExamples */ = {
+			isa = PBXGroup;
+			children = (
+				3E1CFD62263A727E0021BCFF /* AppDelegate.swift */,
+				3E1CFD64263A727E0021BCFF /* SceneDelegate.swift */,
+				3E1CFD66263A727E0021BCFF /* ViewController.swift */,
+				3E1CFD68263A727E0021BCFF /* Main.storyboard */,
+				3E1CFD6B263A72810021BCFF /* Assets.xcassets */,
+				3E1CFD6D263A72810021BCFF /* LaunchScreen.storyboard */,
+				3E1CFD70263A72810021BCFF /* Info.plist */,
+			);
+			path = SwiftHackUIExamples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +173,23 @@
 			productReference = 3E1CFD49263A714E0021BCFF /* SwiftHackUITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		3E1CFD5F263A727E0021BCFF /* SwiftHackUIExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E1CFD71263A72810021BCFF /* Build configuration list for PBXNativeTarget "SwiftHackUIExamples" */;
+			buildPhases = (
+				3E1CFD5C263A727E0021BCFF /* Sources */,
+				3E1CFD5D263A727E0021BCFF /* Frameworks */,
+				3E1CFD5E263A727E0021BCFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftHackUIExamples;
+			productName = SwiftHackUIExamples;
+			productReference = 3E1CFD60263A727E0021BCFF /* SwiftHackUIExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +203,9 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					3E1CFD48263A714E0021BCFF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					3E1CFD5F263A727E0021BCFF = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -168,6 +225,7 @@
 			targets = (
 				3E1CFD3F263A714E0021BCFF /* SwiftHackUI */,
 				3E1CFD48263A714E0021BCFF /* SwiftHackUITests */,
+				3E1CFD5F263A727E0021BCFF /* SwiftHackUIExamples */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +242,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E1CFD5E263A727E0021BCFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E1CFD6F263A72810021BCFF /* LaunchScreen.storyboard in Resources */,
+				3E1CFD6C263A72810021BCFF /* Assets.xcassets in Resources */,
+				3E1CFD6A263A727E0021BCFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +273,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3E1CFD5C263A727E0021BCFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E1CFD67263A727E0021BCFF /* ViewController.swift in Sources */,
+				3E1CFD63263A727E0021BCFF /* AppDelegate.swift in Sources */,
+				3E1CFD65263A727E0021BCFF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -214,6 +292,25 @@
 			targetProxy = 3E1CFD4B263A714E0021BCFF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E1CFD68263A727E0021BCFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E1CFD69263A727E0021BCFF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3E1CFD6D263A72810021BCFF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E1CFD6E263A72810021BCFF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3E1CFD52263A714E0021BCFF /* Debug */ = {
@@ -422,6 +519,44 @@
 			};
 			name = Release;
 		};
+		3E1CFD72263A72810021BCFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U8M84SE4ND;
+				INFOPLIST_FILE = SwiftHackUIExamples/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FabioQuintanilha.SwiftHackUIExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E1CFD73263A72810021BCFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U8M84SE4ND;
+				INFOPLIST_FILE = SwiftHackUIExamples/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FabioQuintanilha.SwiftHackUIExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -448,6 +583,15 @@
 			buildConfigurations = (
 				3E1CFD58263A714E0021BCFF /* Debug */,
 				3E1CFD59263A714E0021BCFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E1CFD71263A72810021BCFF /* Build configuration list for PBXNativeTarget "SwiftHackUIExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E1CFD72263A72810021BCFF /* Debug */,
+				3E1CFD73263A72810021BCFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
