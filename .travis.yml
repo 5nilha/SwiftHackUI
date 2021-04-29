@@ -1,6 +1,9 @@
-language: objective-c
+os: osx
 
+language: objective-c
 osx_image: xcode12.4
+xcode_project: SwiftHackUI.xcodeproj
+xcode_scheme: SwiftHackUI
 env:
   matrix:
     - TEST_SDK=iphonesimulator14.4 OS=14.4 NAME='iPhone 11'
@@ -8,3 +11,6 @@ env:
 
 script:
   - set -o pipefail && xcodebuild test -enableCodeCoverage YES -project SwiftHackUI.xcodeproj -scheme SwiftHackUI -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=YES
+after_success:
+  - slather
+  - bash <(curl -s https://codecov.io/bash) -f reports/cobertura.xml -X coveragepy -X gcov -X xcode
