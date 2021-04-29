@@ -9,25 +9,25 @@ import UIKit
 
 extension UIView {
 
-    convenience init(frame: CGRect, color: UIColor?) {
+    public convenience init(frame: CGRect, color: UIColor?) {
         self.init(frame: frame)
         self.backgroundColor = color
     }
 
-    convenience init(color: UIColor?) {
+    public convenience init(color: UIColor?) {
         self.init(frame: CGRect.zero)
         self.backgroundColor = color
     }
 
-    var screenWidth: CGFloat {
+    public var screenWidth: CGFloat {
         return UIScreen.main.bounds.size.width
     }
 
-    var screenHeight: CGFloat {
+    public var screenHeight: CGFloat {
         return UIScreen.main.bounds.size.height
     }
 
-    var posX: CGFloat {
+    public var posX: CGFloat {
         get {
             return self.frame.origin.x
         }
@@ -36,7 +36,7 @@ extension UIView {
         }
     }
 
-    var posY: CGFloat {
+    public var posY: CGFloat {
         get {
             return self.frame.origin.y
         }
@@ -45,7 +45,7 @@ extension UIView {
         }
     }
 
-    var width: CGFloat {
+    public var width: CGFloat {
         get {
             return self.frame.size.width
         }
@@ -54,7 +54,7 @@ extension UIView {
         }
     }
 
-    var height: CGFloat {
+    public var height: CGFloat {
         get {
             return self.frame.size.height
         }
@@ -63,7 +63,7 @@ extension UIView {
         }
     }
 
-    var cornerRadius: CGFloat {
+    public var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
         }
@@ -73,7 +73,7 @@ extension UIView {
         }
     }
 
-    var borderWidth: CGFloat {
+    public var borderWidth: CGFloat {
         get {
             return layer.borderWidth
         }
@@ -82,7 +82,7 @@ extension UIView {
         }
     }
 
-    var borderColor: UIColor? {
+    public var borderColor: UIColor? {
         get {
             return UIColor(cgColor:(layer.borderColor!))
         }
@@ -91,11 +91,11 @@ extension UIView {
         }
     }
     
-    func circle() {
+    public func circle() {
         self.cornerRadius = self.height / 2
     }
 
-    func addSeparator(_ ypos: CGFloat, color: UIColor) -> CALayer {
+    public func addSeparator(_ ypos: CGFloat, color: UIColor) -> CALayer {
         let separator = CALayer()
         separator.frame = CGRect(x: 0, y: ypos, width: self.width, height: 1)
         separator.backgroundColor = color.cgColor
@@ -119,7 +119,7 @@ extension UIView {
         })
     }
 
-    func animateHide(_ duration: Double = 0.2, completion:(()->())? = nil) {
+    public func animateHide(_ duration: Double = 0.2, completion:(()->())? = nil) {
         if alpha == 0 || isHidden == true {
             completion?()
             return
@@ -132,7 +132,7 @@ extension UIView {
         })
     }
 
-    func removeAllGestures() {
+    public func removeAllGestures() {
         if let gestureRecognizers = gestureRecognizers {
             for g in gestureRecognizers {
                 removeGestureRecognizer(g)
@@ -140,7 +140,7 @@ extension UIView {
         }
     }
 
-    func fillWithView(_ subView: UIView, topPadding: CGFloat = 0.0, bottomPadding: CGFloat = 0.0, leadingPadding: CGFloat = 0.0, trailingPadding: CGFloat = 0.0) {
+    public func fillWithView(_ subView: UIView, topPadding: CGFloat = 0.0, bottomPadding: CGFloat = 0.0, leadingPadding: CGFloat = 0.0, trailingPadding: CGFloat = 0.0) {
 
         // exit out if re-adding subview to superview
         guard !self.subviews.contains(subView) else { return }
@@ -172,7 +172,7 @@ extension UIView {
      - parameter height: Height, make it 0 if not needed
      */
 
-    func anchor(top: NSLayoutYAxisAnchor?,
+    public func anchor(top: NSLayoutYAxisAnchor?,
                 left: NSLayoutXAxisAnchor?,
                 bottom: NSLayoutYAxisAnchor?,
                 right: NSLayoutXAxisAnchor?,
@@ -210,7 +210,7 @@ extension UIView {
      - parameter height: Optional Height
      */
 
-    func anchor(width: CGFloat = 0, height: CGFloat = 0) {
+    public func anchor(width: CGFloat = 0, height: CGFloat = 0) {
         translatesAutoresizingMaskIntoConstraints = false
         if width != 0 {
             widthAnchor.constraint(equalToConstant: width).isActive = true
@@ -220,7 +220,7 @@ extension UIView {
         }
     }
 
-    func enableAutoLayout(enabled: Bool = true) {
+    public func enableAutoLayout(enabled: Bool = true) {
         translatesAutoresizingMaskIntoConstraints = !enabled
     }
     

@@ -28,16 +28,16 @@ public class CircleButtonGroupView: UIView {
         }
     }
     
-    convenience public init() {
+    public convenience init() {
         self.init(frame: .zero)
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         commontInit()
     }
     
-    required public init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         super.init(coder: coder)
         commontInit()
     }
