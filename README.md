@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.com/5nilha/SwiftHackUI.svg?branch=main)](https://travis-ci.com/github/5nilha)
 
 A CocoaPods library written in Swift to handle UI components
-This pod helps to speed up the development with some UI componenents.
+This pod helps to speed up the development with some UI components.
 
 
 ## Requirements
