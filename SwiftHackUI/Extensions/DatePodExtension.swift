@@ -9,6 +9,14 @@ import Foundation
 
 extension Date {
     
+    public static func localDate() -> Date {
+        let nowUTC = Date()
+        let timeZoneOffset = Double(Localization.localTimezone.secondsFromGMT(for: nowUTC))
+        guard let localDate = Calendar.current.date(byAdding: .second, value: Int(timeZoneOffset), to: nowUTC) else {return Date()}
+
+        return localDate
+    }
+    
     public var day: Int {
         return Calendar.current.component(.day, from: self)
     }

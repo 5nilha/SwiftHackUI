@@ -19,6 +19,10 @@ public final class Localization {
         return Locale.current
     }
     
+    public class var localTimezone: TimeZone {
+        return TimeZone.current
+    }
+    
     public class var language: String {
         if let preferedLanguage = preferedLocaleLanguage {
             return preferedLanguage

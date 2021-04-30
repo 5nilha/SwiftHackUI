@@ -84,14 +84,14 @@ public final class DaysGroupView: UIView, UICollectionViewDelegate, UICollection
     }
 }
 
-public class DayGroupCell: UICollectionViewCell {
+fileprivate class DayGroupCell: UICollectionViewCell {
     
-    public static let identifier = "dayGroupCell"
+    fileprivate static let identifier = "dayGroupCell"
     private lazy var stackView = UIStackView()
     private let circleView = CircleView()
     private var date: Date?
     
-    public func setupView(date: Date) {
+    fileprivate func setupView(date: Date) {
         self.date = date
         contentView.backgroundColor = .clear
         addAndConstrainStackView()
@@ -136,7 +136,7 @@ public class DayGroupCell: UICollectionViewCell {
         let view = UIView()
         guard let date = self.date else { return }
         circleView.translatesAutoresizingMaskIntoConstraints = false
-        date.day == Date().day ? circleView.filled() : circleView.outlined()
+        circleView.outlined()
         circleView.text = "\(date.day)"
         stackView.addArrangedSubview(view)
         view.addSubview(circleView)
@@ -149,11 +149,11 @@ public class DayGroupCell: UICollectionViewCell {
         ])
     }
     
-    public func selectDateCell() {
+    fileprivate func selectDateCell() {
         self.circleView.filled()
     }
     
-    public func deSelectDateCell() {
+    fileprivate func deSelectDateCell() {
         self.circleView.outlined()
     }
 }
