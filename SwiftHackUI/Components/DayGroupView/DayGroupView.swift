@@ -47,6 +47,7 @@ public final class DaysGroupView: UIView, UICollectionViewDelegate, UICollection
         daysCollectionView.dataSource = self
         daysCollectionView.register(DayGroupCell.self, forCellWithReuseIdentifier: DayGroupCell.identifier)
         daysCollectionView.translatesAutoresizingMaskIntoConstraints = false
+        
         self.addSubview(daysCollectionView)
         
         NSLayoutConstraint.activate([
@@ -88,12 +89,14 @@ public class DayGroupCell: UICollectionViewCell {
     public static let identifier = "dayGroupCell"
     private lazy var stackView = UIStackView()
     private let circleView = CircleView()
+    private var date: Date?
     
     public func setupView(date: Date) {
+        self.date = date
         contentView.backgroundColor = .clear
         addAndConstrainStackView()
-        addAndContraingWeekLabel(text: date.weekDay)
-        addAndConstrainCircleView(text: "\(date.day)")
+        addAndContraingWeekLabel()
+        addAndConstrainCircleView()
     }
     
     private func addAndConstrainStackView() {
@@ -114,12 +117,12 @@ public class DayGroupCell: UICollectionViewCell {
         ])
     }
     
-    private func addAndContraingWeekLabel(text: String) {
+    private func addAndContraingWeekLabel() {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.regular(18)
+        label.font = UIFont.regular(13)
         label.textColor = Colors.gray8
-        label.text = text
+        label.text = date?.weekDay
         label.textAlignment = .center
         stackView.addArrangedSubview(label)
         
@@ -129,12 +132,12 @@ public class DayGroupCell: UICollectionViewCell {
         ])
     }
     
-    private func addAndConstrainCircleView(text: String) {
+    private func addAndConstrainCircleView() {
         let view = UIView()
-    
+        guard let date = self.date else { return }
         circleView.translatesAutoresizingMaskIntoConstraints = false
-        circleView.outlined()
-        circleView.text = text
+        date.day == Date().day ? circleView.filled() : circleView.outlined()
+        circleView.text = "\(date.day)"
         stackView.addArrangedSubview(view)
         view.addSubview(circleView)
         
