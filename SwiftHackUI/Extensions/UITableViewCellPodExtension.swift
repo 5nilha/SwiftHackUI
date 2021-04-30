@@ -8,9 +8,13 @@
 import UIKit
 
 extension UITableViewCell {
-    func disableSelection() {
+    public func disableSelection() {
         self.selectionStyle = UITableViewCell.SelectionStyle.none
         self.contentView.alpha = 0.2
         self.isUserInteractionEnabled = false
+    }
+    
+    public func rotate180() {
+        self.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
     }
 }

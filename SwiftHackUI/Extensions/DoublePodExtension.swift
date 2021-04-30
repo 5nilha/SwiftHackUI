@@ -9,48 +9,48 @@ import Foundation
 
 extension Double {
     
-    func format(_ format: String) -> String {
+    public func format(_ format: String) -> String {
         return String(format: format, self)
     }
     
-    func toDecimalPoint(_ amount: Int) -> String {
+    public func toDecimalPoint(_ amount: Int) -> String {
         return self.format("%.\(amount)f")
     }
     
-    var string: String {
+    public var string: String {
         return String(self)
     }
     
-    func roundWithDecimal() -> Double {
+    public func roundWithDecimal() -> Double {
         return amountString.double ?? 0.0
     }
     
-    var amountString: String {
+    public var amountString: String {
         return String(format: "%.2f", self)
     }
     
-    var percentage: String {
+    public var percentage: String {
         return String(format: "%.2f%%", self)
     }
     
-    func roundToPlaces(_ places: Int) -> Double {
+    public func roundToPlaces(_ places: Int) -> Double {
         let divisor = pow(10.0, Double(places))
         return (self * divisor).rounded() / divisor
     }
 
-    var negative: Double {
+    public var negative: Double {
         return self < 0 ? self : self * -1
     }
     
-    var anyObject: AnyObject {
+    public var anyObject: AnyObject {
         return self as AnyObject
     }
     
-    var decimalValue: Decimal? {
+    public var decimalValue: Decimal? {
         return Decimal(string: amountString)
     }
     
-    var decimal: Decimal {
+    public var decimal: Decimal {
         return Decimal(self)
     }
 }

@@ -11,7 +11,7 @@ public protocol CircleButtonDelegate: class {
     func buttonClicked(title: String?)
 }
 
-public class CircleButton: UIButton {
+public final class CircleButton: UIButton {
     
     public weak var delegate: CircleButtonDelegate?
     

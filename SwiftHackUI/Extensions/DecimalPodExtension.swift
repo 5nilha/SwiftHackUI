@@ -9,15 +9,15 @@ import Foundation
 
 extension Decimal {
     
-    var intValue: Int {
+    public var intValue: Int {
         return Int(truncating: self as NSDecimalNumber)
     }
     
-    var doubleValue: Double {
+    public var doubleValue: Double {
         return Double(truncating: self as NSDecimalNumber).roundToPlaces(2)
     }
     
-    var stringValue: String {
+    public var stringValue: String {
         return NSDecimalNumber(decimal: self).stringValue
     }
 }

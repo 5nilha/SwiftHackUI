@@ -35,6 +35,18 @@
 		3E1CFE6D263B10A20021BCFF /* ScrollViewPodExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFE6C263B10A20021BCFF /* ScrollViewPodExtension.swift */; };
 		3E1CFE72263B10CF0021BCFF /* UITableViewCellPodExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFE71263B10CF0021BCFF /* UITableViewCellPodExtension.swift */; };
 		3E1CFE78263B12850021BCFF /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFE77263B12850021BCFF /* CalendarView.swift */; };
+		3E1CFE88263B1C810021BCFF /* UITableViewPodExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFE87263B1C810021BCFF /* UITableViewPodExtension.swift */; };
+		3E1CFE8E263B2E0E0021BCFF /* DateSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFE8D263B2E0E0021BCFF /* DateSelectionView.swift */; };
+		3E1CFE97263B2EB50021BCFF /* RadioButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFE96263B2EB50021BCFF /* RadioButtonGroup.swift */; };
+		3E1CFEA0263B32090021BCFF /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFE9F263B32090021BCFF /* BubbleView.swift */; };
+		3E1CFEA5263B325D0021BCFF /* MessagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFEA4263B325D0021BCFF /* MessagingView.swift */; };
+		3E1CFEAE263B33220021BCFF /* LocationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFEAD263B33220021BCFF /* LocationSearchView.swift */; };
+		3E1CFEB7263B33F20021BCFF /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFEB6263B33F20021BCFF /* CircleImageView.swift */; };
+		3E1CFEC0263B36320021BCFF /* LocationSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFEBF263B36320021BCFF /* LocationSearch.swift */; };
+		3E1CFED4263B36D90021BCFF /* LocationGeopoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFED3263B36D90021BCFF /* LocationGeopoint.swift */; };
+		3E1CFEE9263BCA480021BCFF /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFEE8263BCA470021BCFF /* CircleView.swift */; };
+		3E1CFEF2263BCAD40021BCFF /* DayGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFEF1263BCAD40021BCFF /* DayGroupView.swift */; };
+		3E1CFEFA263BCAF50021BCFF /* CalendarPodExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFEF9263BCAF50021BCFF /* CalendarPodExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +93,18 @@
 		3E1CFE6C263B10A20021BCFF /* ScrollViewPodExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewPodExtension.swift; sourceTree = "<group>"; };
 		3E1CFE71263B10CF0021BCFF /* UITableViewCellPodExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellPodExtension.swift; sourceTree = "<group>"; };
 		3E1CFE77263B12850021BCFF /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		3E1CFE87263B1C810021BCFF /* UITableViewPodExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewPodExtension.swift; sourceTree = "<group>"; };
+		3E1CFE8D263B2E0E0021BCFF /* DateSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionView.swift; sourceTree = "<group>"; };
+		3E1CFE96263B2EB50021BCFF /* RadioButtonGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonGroup.swift; sourceTree = "<group>"; };
+		3E1CFE9F263B32090021BCFF /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
+		3E1CFEA4263B325D0021BCFF /* MessagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingView.swift; sourceTree = "<group>"; };
+		3E1CFEAD263B33220021BCFF /* LocationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchView.swift; sourceTree = "<group>"; };
+		3E1CFEB6263B33F20021BCFF /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		3E1CFEBF263B36320021BCFF /* LocationSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearch.swift; sourceTree = "<group>"; };
+		3E1CFED3263B36D90021BCFF /* LocationGeopoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationGeopoint.swift; sourceTree = "<group>"; };
+		3E1CFEE8263BCA470021BCFF /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		3E1CFEF1263BCAD40021BCFF /* DayGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayGroupView.swift; sourceTree = "<group>"; };
+		3E1CFEF9263BCAF50021BCFF /* CalendarPodExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPodExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +156,7 @@
 		3E1CFD42263A714E0021BCFF /* SwiftHackUI */ = {
 			isa = PBXGroup;
 			children = (
+				3E1CFEC7263B368E0021BCFF /* DataType */,
 				3E1CFD99263A77300021BCFF /* Components */,
 				3E1CFD8A263A76960021BCFF /* Extensions */,
 				3E1CFD81263A76570021BCFF /* Utils */,
@@ -190,6 +215,8 @@
 				3E1CFE67263B105E0021BCFF /* UITextViewPodExtension.swift */,
 				3E1CFE6C263B10A20021BCFF /* ScrollViewPodExtension.swift */,
 				3E1CFE71263B10CF0021BCFF /* UITableViewCellPodExtension.swift */,
+				3E1CFE87263B1C810021BCFF /* UITableViewPodExtension.swift */,
+				3E1CFEF9263BCAF50021BCFF /* CalendarPodExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -206,6 +233,13 @@
 		3E1CFD99263A77300021BCFF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				3E1CFEF0263BCABD0021BCFF /* DayGroupView */,
+				3E1CFEE7263BCA2F0021BCFF /* CircleView */,
+				3E1CFEB5263B33E40021BCFF /* CircleImage */,
+				3E1CFEAC263B32FF0021BCFF /* LocationSearchView */,
+				3E1CFE9E263B31E60021BCFF /* MessagingView */,
+				3E1CFE95263B2E980021BCFF /* RadioButton */,
+				3E1CFE8C263B2DB30021BCFF /* DateSelectionView */,
 				3E1CFE76263B12540021BCFF /* CalendarView */,
 				3E1CFD98263A771E0021BCFF /* CircleButton */,
 			);
@@ -250,6 +284,72 @@
 				3E1CFE77263B12850021BCFF /* CalendarView.swift */,
 			);
 			path = CalendarView;
+			sourceTree = "<group>";
+		};
+		3E1CFE8C263B2DB30021BCFF /* DateSelectionView */ = {
+			isa = PBXGroup;
+			children = (
+				3E1CFE8D263B2E0E0021BCFF /* DateSelectionView.swift */,
+			);
+			path = DateSelectionView;
+			sourceTree = "<group>";
+		};
+		3E1CFE95263B2E980021BCFF /* RadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				3E1CFE96263B2EB50021BCFF /* RadioButtonGroup.swift */,
+			);
+			path = RadioButton;
+			sourceTree = "<group>";
+		};
+		3E1CFE9E263B31E60021BCFF /* MessagingView */ = {
+			isa = PBXGroup;
+			children = (
+				3E1CFE9F263B32090021BCFF /* BubbleView.swift */,
+				3E1CFEA4263B325D0021BCFF /* MessagingView.swift */,
+			);
+			path = MessagingView;
+			sourceTree = "<group>";
+		};
+		3E1CFEAC263B32FF0021BCFF /* LocationSearchView */ = {
+			isa = PBXGroup;
+			children = (
+				3E1CFEAD263B33220021BCFF /* LocationSearchView.swift */,
+			);
+			path = LocationSearchView;
+			sourceTree = "<group>";
+		};
+		3E1CFEB5263B33E40021BCFF /* CircleImage */ = {
+			isa = PBXGroup;
+			children = (
+				3E1CFEB6263B33F20021BCFF /* CircleImageView.swift */,
+			);
+			path = CircleImage;
+			sourceTree = "<group>";
+		};
+		3E1CFEC7263B368E0021BCFF /* DataType */ = {
+			isa = PBXGroup;
+			children = (
+				3E1CFEBF263B36320021BCFF /* LocationSearch.swift */,
+				3E1CFED3263B36D90021BCFF /* LocationGeopoint.swift */,
+			);
+			path = DataType;
+			sourceTree = "<group>";
+		};
+		3E1CFEE7263BCA2F0021BCFF /* CircleView */ = {
+			isa = PBXGroup;
+			children = (
+				3E1CFEE8263BCA470021BCFF /* CircleView.swift */,
+			);
+			path = CircleView;
+			sourceTree = "<group>";
+		};
+		3E1CFEF0263BCABD0021BCFF /* DayGroupView */ = {
+			isa = PBXGroup;
+			children = (
+				3E1CFEF1263BCAD40021BCFF /* DayGroupView.swift */,
+			);
+			path = DayGroupView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,22 +492,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E1CFEFA263BCAF50021BCFF /* CalendarPodExtension.swift in Sources */,
+				3E1CFEC0263B36320021BCFF /* LocationSearch.swift in Sources */,
+				3E1CFE8E263B2E0E0021BCFF /* DateSelectionView.swift in Sources */,
+				3E1CFE97263B2EB50021BCFF /* RadioButtonGroup.swift in Sources */,
 				3E1CFD94263A76FB0021BCFF /* UIViewPodExtension.swift in Sources */,
 				3E1CFD78263A75E70021BCFF /* CircleButtonGroupView.swift in Sources */,
 				3E1CFE5E263B0F210021BCFF /* Localization.swift in Sources */,
+				3E1CFE88263B1C810021BCFF /* UITableViewPodExtension.swift in Sources */,
 				3E1CFE78263B12850021BCFF /* CalendarView.swift in Sources */,
 				3E1CFE54263B0EB80021BCFF /* UIFontPodExtension.swift in Sources */,
 				3E1CFE40263B0E2E0021BCFF /* DoublePodExtension.swift in Sources */,
+				3E1CFEA0263B32090021BCFF /* BubbleView.swift in Sources */,
 				3E1CFE4A263B0E6F0021BCFF /* DecimalPodExtension.swift in Sources */,
 				3E1CFE63263B0F940021BCFF /* UITextFieldPodExtension.swift in Sources */,
+				3E1CFED4263B36D90021BCFF /* LocationGeopoint.swift in Sources */,
 				3E1CFE72263B10CF0021BCFF /* UITableViewCellPodExtension.swift in Sources */,
+				3E1CFEF2263BCAD40021BCFF /* DayGroupView.swift in Sources */,
 				3E1CFD8C263A76C70021BCFF /* UIColorPodExtension.swift in Sources */,
 				3E1CFE59263B0EF30021BCFF /* DatePodExtension.swift in Sources */,
 				3E1CFE68263B105E0021BCFF /* UITextViewPodExtension.swift in Sources */,
+				3E1CFEE9263BCA480021BCFF /* CircleView.swift in Sources */,
+				3E1CFEB7263B33F20021BCFF /* CircleImageView.swift in Sources */,
 				3E1CFD83263A766E0021BCFF /* Colors.swift in Sources */,
 				3E1CFE4F263B0E8E0021BCFF /* LabelPodExtension.swift in Sources */,
 				3E1CFE45263B0E500021BCFF /* StringPodExtension.swift in Sources */,
+				3E1CFEA5263B325D0021BCFF /* MessagingView.swift in Sources */,
 				3E1CFD7D263A763F0021BCFF /* CircleButton.swift in Sources */,
+				3E1CFEAE263B33220021BCFF /* LocationSearchView.swift in Sources */,
 				3E1CFE6D263B10A20021BCFF /* ScrollViewPodExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

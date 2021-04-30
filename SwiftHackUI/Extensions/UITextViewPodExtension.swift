@@ -8,7 +8,7 @@
 import UIKit
 
 extension UITextView {
-    func scrollToBottom() {
+    public func scrollToBottom() {
         if self.text.count > 0 {
             let range = NSMakeRange(self.text.count-1, 1)
             self.scrollRangeToVisible(range)

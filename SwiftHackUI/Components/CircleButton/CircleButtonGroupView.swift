@@ -14,7 +14,7 @@ public struct CircleButtonItem {
     }
 }
 
-public class CircleButtonGroupView: UIView {
+public final class CircleButtonGroupView: UIView {
     
     private lazy var stackView = UIStackView()
     private lazy var container = UIView()

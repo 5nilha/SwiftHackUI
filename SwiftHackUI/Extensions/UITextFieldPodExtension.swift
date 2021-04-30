@@ -9,7 +9,7 @@ import UIKit
 
 extension UITextField {
     
-    func hideAssistantBar() {
+    public func hideAssistantBar() {
         self.inputAssistantItem.leadingBarButtonGroups = [];
         self.inputAssistantItem.trailingBarButtonGroups = [];
     }
