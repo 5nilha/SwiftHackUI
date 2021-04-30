@@ -17,6 +17,10 @@ extension Date {
         return localDate
     }
     
+    public func nextDay() -> Date? {
+        return Calendar.current.date(byAdding: .day, value: 1, to: self)
+    }
+    
     public var day: Int {
         return Calendar.current.component(.day, from: self)
     }
@@ -46,6 +50,13 @@ extension Date {
         return dateformat.string(from: self)
     }
     
+    public static func getFormattedDate(dateString: String, format: String) -> Date? {
+        let formatter = DateFormatter.dateFormat(fromTemplate: format, options: 0, locale: Localization.currentLocale)
+        let dateformat = DateFormatter()
+        dateformat.dateFormat = formatter
+        return dateformat.date(from: dateString)
+    }
+    
     public var userFriendlyString: String {
         return self.getFormattedDate(format: "MMMM dd, YYY").capitalized
     }
@@ -58,5 +69,32 @@ extension Date {
             }
         }
         return dates
+    }
+    
+    public static func dayTimeSlots(interval: Int = 30) -> [String]? {
+        var array: [String] = []
+        let formatter2 = DateFormatter()
+        formatter2.dateFormat = "hh:mm a"
+        let date = Date.localDate()
+        guard let nextDay = date.nextDay(),
+            let startDate = Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: date),
+              let endDate = Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: nextDay)
+        else { return nil }
+
+        let minInterval = interval // Minutes
+        let string = formatter2.string(from: startDate)
+        array.append(string)
+        
+        var i = 1
+        var dateTime = startDate.addingTimeInterval(TimeInterval(i * minInterval * 60))
+        
+        while dateTime <= endDate {
+            let string = formatter2.string(from: dateTime)
+            array.append(string)
+            
+            i += 1
+            dateTime = startDate.addingTimeInterval(TimeInterval(i * minInterval * 60))
+        }
+        return array
     }
 }
