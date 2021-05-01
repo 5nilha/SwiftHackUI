@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "SwiftHackUI"
-  spec.version      = "0.0.7"
+  spec.version      = "0.0.8"
   spec.summary      = "A CocoaPods library written in Swift to handle UI components as RadioBox, CircleButton, Calendar, and more."
   
   spec.description  = <<-DESC

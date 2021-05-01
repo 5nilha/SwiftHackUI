@@ -7,7 +7,18 @@
 
 import UIKit
 
-public final class CircleImageView: UIImageView {
+public final class CircleImageView: UIView {
+    
+    private var imageView: UIImageView?
+    private var imageBorderColor: UIColor = .clear
+    private var imageBorderWidth: CGFloat = 2
+    private var backViewType: BackViewType = .none
+    
+    private enum BackViewType {
+        case circle
+        case round(CGFloat)
+        case none
+    }
     
     public convenience init() {
         self.init(frame: .zero)
@@ -22,43 +33,86 @@ public final class CircleImageView: UIImageView {
         super.init(coder: coder)
         self.commonInit()
     }
-
-    public override var image: UIImage? {
-        get {
-            return super.image
-        } set {
-            super.image = newValue
-            if newValue != nil {
-                borderWidth = 2
-                borderColor = Colors.primaryshadow
-            } else {
-                borderColor = .clear
-                borderWidth = 0
-            }
-        }
-    }
     
     private func commonInit() {
-        roundView()
+        self.imageView?.circle()
+        addAndConstrainImageView()
     }
     
     public override func layoutSubviews() {
         super.layoutSubviews()
-        roundView()
+        self.imageView?.circle()
+        
+        switch backViewType {
+        case .circle:
+            circle()
+        case .round(let value):
+            self.cornerRadius = value
+        default:
+            self.cornerRadius = 0
+        }
     }
     
-    private func roundView() {
-        if width != height {
-            self.frame = CGRect(x: frame.origin.x, y: frame.origin.y, width: height, height: height)
+    public var image: UIImage? {
+        get {
+            return imageView?.image
+        } set {
+            if imageView == nil {
+                imageView = UIImageView()
+            }
+            imageView?.image = newValue
+            imageView?.borderWidth = imageBorderWidth
+            imageView?.borderColor = imageBorderColor
+            addAndConstrainImageView()
         }
-        self.circle()
+    }
+    
+    private func addAndConstrainImageView() {
+        removeAllSubViews()
+        guard let imageView = self.imageView else { return }
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        self.isHidden = false
+        let imageHeight = height - (height * 0.10)
+        
+        self.addSubview(imageView)
+        NSLayoutConstraint.activate([
+            imageView.widthAnchor.constraint(equalToConstant: imageHeight),
+            imageView.heightAnchor.constraint(equalToConstant: imageHeight),
+            imageView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            imageView.centerXAnchor.constraint(equalTo: centerXAnchor)
+        ])
+    }
+    
+    private func addRoundBackView(color: UIColor) {
+        backViewType = .round(6)
+        backgroundColor = color
+    }
+    
+    public func addCircleBackView(color: UIColor) {
+        backViewType = .circle
+        backgroundColor = color.withAlphaComponent(0.4)
+    }
+    
+    private func removeBackView(color: UIColor) {
+        backViewType = .round(6)
+        backgroundColor = .clear
+    }
+    
+    public func addBorder(width: CGFloat, color: UIColor) {
+        imageBorderColor = color
+        imageBorderWidth = width
+        imageView?.borderWidth = imageBorderWidth
+        imageView?.borderColor = imageBorderColor
     }
     
     public func removeImage() {
-        self.image = nil
+        self.imageView?.image = nil
+        self.imageView = nil
+        self.isHidden = true
     }
     
     public func clear() {
         removeImage()
     }
 }
+

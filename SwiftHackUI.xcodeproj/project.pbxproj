@@ -47,6 +47,9 @@
 		3E1CFEE9263BCA480021BCFF /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFEE8263BCA470021BCFF /* CircleView.swift */; };
 		3E1CFEF2263BCAD40021BCFF /* DayGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFEF1263BCAD40021BCFF /* DayGroupView.swift */; };
 		3E1CFEFA263BCAF50021BCFF /* CalendarPodExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFEF9263BCAF50021BCFF /* CalendarPodExtension.swift */; };
+		3E1CFF15263CC20F0021BCFF /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFF14263CC20F0021BCFF /* SeparatorView.swift */; };
+		3E1CFF21263CCCB70021BCFF /* MarkLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFF20263CCCB70021BCFF /* MarkLineView.swift */; };
+		3E1CFF3A263DB0FE0021BCFF /* AppointmentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CFF39263DB0FE0021BCFF /* AppointmentCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +108,9 @@
 		3E1CFEE8263BCA470021BCFF /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		3E1CFEF1263BCAD40021BCFF /* DayGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayGroupView.swift; sourceTree = "<group>"; };
 		3E1CFEF9263BCAF50021BCFF /* CalendarPodExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPodExtension.swift; sourceTree = "<group>"; };
+		3E1CFF14263CC20F0021BCFF /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
+		3E1CFF20263CCCB70021BCFF /* MarkLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkLineView.swift; sourceTree = "<group>"; };
+		3E1CFF39263DB0FE0021BCFF /* AppointmentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +239,9 @@
 		3E1CFD99263A77300021BCFF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				3E1CFF38263DB0DF0021BCFF /* AppointmentCardView */,
+				3E1CFF28263CCCC40021BCFF /* SeparatorView */,
+				3E1CFF1F263CCCA20021BCFF /* MarkLineView */,
 				3E1CFEF0263BCABD0021BCFF /* DayGroupView */,
 				3E1CFEE7263BCA2F0021BCFF /* CircleView */,
 				3E1CFEB5263B33E40021BCFF /* CircleImage */,
@@ -350,6 +359,30 @@
 				3E1CFEF1263BCAD40021BCFF /* DayGroupView.swift */,
 			);
 			path = DayGroupView;
+			sourceTree = "<group>";
+		};
+		3E1CFF1F263CCCA20021BCFF /* MarkLineView */ = {
+			isa = PBXGroup;
+			children = (
+				3E1CFF20263CCCB70021BCFF /* MarkLineView.swift */,
+			);
+			path = MarkLineView;
+			sourceTree = "<group>";
+		};
+		3E1CFF28263CCCC40021BCFF /* SeparatorView */ = {
+			isa = PBXGroup;
+			children = (
+				3E1CFF14263CC20F0021BCFF /* SeparatorView.swift */,
+			);
+			path = SeparatorView;
+			sourceTree = "<group>";
+		};
+		3E1CFF38263DB0DF0021BCFF /* AppointmentCardView */ = {
+			isa = PBXGroup;
+			children = (
+				3E1CFF39263DB0FE0021BCFF /* AppointmentCardView.swift */,
+			);
+			path = AppointmentCardView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -495,6 +528,7 @@
 				3E1CFEFA263BCAF50021BCFF /* CalendarPodExtension.swift in Sources */,
 				3E1CFEC0263B36320021BCFF /* LocationSearch.swift in Sources */,
 				3E1CFE8E263B2E0E0021BCFF /* DateSelectionView.swift in Sources */,
+				3E1CFF21263CCCB70021BCFF /* MarkLineView.swift in Sources */,
 				3E1CFE97263B2EB50021BCFF /* RadioButtonGroup.swift in Sources */,
 				3E1CFD94263A76FB0021BCFF /* UIViewPodExtension.swift in Sources */,
 				3E1CFD78263A75E70021BCFF /* CircleButtonGroupView.swift in Sources */,
@@ -504,6 +538,7 @@
 				3E1CFE54263B0EB80021BCFF /* UIFontPodExtension.swift in Sources */,
 				3E1CFE40263B0E2E0021BCFF /* DoublePodExtension.swift in Sources */,
 				3E1CFEA0263B32090021BCFF /* BubbleView.swift in Sources */,
+				3E1CFF15263CC20F0021BCFF /* SeparatorView.swift in Sources */,
 				3E1CFE4A263B0E6F0021BCFF /* DecimalPodExtension.swift in Sources */,
 				3E1CFE63263B0F940021BCFF /* UITextFieldPodExtension.swift in Sources */,
 				3E1CFED4263B36D90021BCFF /* LocationGeopoint.swift in Sources */,
@@ -514,6 +549,7 @@
 				3E1CFE68263B105E0021BCFF /* UITextViewPodExtension.swift in Sources */,
 				3E1CFEE9263BCA480021BCFF /* CircleView.swift in Sources */,
 				3E1CFEB7263B33F20021BCFF /* CircleImageView.swift in Sources */,
+				3E1CFF3A263DB0FE0021BCFF /* AppointmentCardView.swift in Sources */,
 				3E1CFD83263A766E0021BCFF /* Colors.swift in Sources */,
 				3E1CFE4F263B0E8E0021BCFF /* LabelPodExtension.swift in Sources */,
 				3E1CFE45263B0E500021BCFF /* StringPodExtension.swift in Sources */,

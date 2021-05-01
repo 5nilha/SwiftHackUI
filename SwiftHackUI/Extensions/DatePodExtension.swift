@@ -21,6 +21,18 @@ extension Date {
         return Calendar.current.date(byAdding: .day, value: 1, to: self)
     }
     
+    public var seconds: Int {
+        return Calendar.current.component(.second, from: self)
+    }
+    
+    public var minutes: Int {
+        return Calendar.current.component(.minute, from: self)
+    }
+    
+    public var hour: Int {
+        return Calendar.current.component(.hour, from: self)
+    }
+    
     public var day: Int {
         return Calendar.current.component(.day, from: self)
     }
@@ -41,6 +53,12 @@ extension Date {
     
     public var previousMonth: Date? {
         return Calendar.current.date(byAdding: .month, value: -1, to: self)
+    }
+    
+    public func getFormattedHourAndMinutes() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "hh:mm a"
+        return formatter.string(from: self)
     }
     
     public func getFormattedDate(format: String) -> String {
@@ -82,14 +100,14 @@ extension Date {
         else { return nil }
 
         let minInterval = interval // Minutes
-        let string = formatter2.string(from: startDate)
+        let string = startDate.getFormattedHourAndMinutes()
         array.append(string)
         
         var i = 1
         var dateTime = startDate.addingTimeInterval(TimeInterval(i * minInterval * 60))
         
         while dateTime <= endDate {
-            let string = formatter2.string(from: dateTime)
+            let string = dateTime.getFormattedHourAndMinutes()
             array.append(string)
             
             i += 1
