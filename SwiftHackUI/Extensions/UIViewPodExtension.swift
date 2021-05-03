@@ -227,4 +227,12 @@ extension UIView {
     public func removeAllSubViews() {
         self.subviews.forEach({ $0.removeFromSuperview() })
     }
+    
+    public func addToTopWindow() {
+        UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.addSubview(self)
+    }
+    
+    public func removeFromTopWindow() {
+        self.removeFromSuperview()
+    }
 }

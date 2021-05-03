@@ -17,6 +17,10 @@ extension Date {
         return localDate
     }
     
+    public func dateFrom(_ time: Calendar.Component, value: Int) -> Date? {
+        return Calendar.current.date(byAdding: time, value: value, to: self)
+    }
+    
     public func nextDay() -> Date? {
         return Calendar.current.date(byAdding: .day, value: 1, to: self)
     }
